@@ -1,0 +1,59 @@
+@grey: #e5e5ea;
+@blue: #1289fe;
+
+body {
+  height: 50vh;
+  background: white;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+form{
+  height: 50vh;
+}
+       
+blockquote {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+p {
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background: @grey;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+  
+  &.chatbot {
+    float: left;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      left: -0.5em;
+      bottom: 0;
+      width: 0.5em;
+      height: 1em;
+      border-right: 0.5em solid @grey;
+      border-bottom-right-radius: 1em 0.5em;
+    }
+  }
+  
+  &.user {
+    float: right;
+    background-color: @blue;
+    color: white;
+   
+    &::after {
+      content: "";
+      position: absolute;
+      right: -0.5em;
+      bottom: 0;
+      width: 0.5em;
+      height: 1em;
+      border-left: 0.5em solid @blue;
+      border-bottom-left-radius: 1em 0.5em;
+    }
+  }
+}

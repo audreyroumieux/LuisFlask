@@ -1,0 +1,85 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatBotVacancePrice</title>
+    <link href="../static/css/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <img src="http://blog.bourse-des-vols.com/wp-content/uploads/2015/08/billet-avion-pas-cher-temps-de-vol.jpg.jpg" alt="image terre avion">
+    <h2> Destination Vacances !</h2>
+    <table class="table table-striped">
+        <th>Pays</th>
+        <th>Ville</th>
+        <tr>
+            <td>
+                <p>FRANCE</p>
+            </td>
+            <td>
+                <p>Marseille</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>FRANCE</p>
+            </td>
+            <td>
+                <p>Nice</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>FRANCE</p>
+            </td>
+            <td>
+                <p>Montpelier</p>
+            </td>
+        </tr>
+          <tr>
+            <td>
+                <p>FRANCE</p>
+            </td>
+            <td>
+                <p>Bagnols sur Ceze</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Italie</p>
+            </td>
+            <td>
+                <p>Rome</p>
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <p>Japon</p>
+            </td>
+            <td>
+                <p>Tokyo</p>
+            </td>
+        </tr>
+    </table>
+    
+    <form method="post" action="/reservation/traitement" cf-form>
+        <blockquote class="chat">
+            <p class="chatbot" for="instruction"> Que puis-je faire pour vous aider ?</p>
+            <p class="user">
+                <input type="text" name="instruction" id="instruction"/>
+                <button type="submit" >OK</button>
+            </p>
+        <!-- 
+        <label for="destination"> Quelle est votre destination ?</label>
+        <input type="text" name="destination" id="destination"/>
+        
+        <label for="depart">Quand souetez vous partir ?</label>
+        <input type="text" name="depart" id="depart"/>
+        
+        <label for="nb_billet">Commbien de billets voulez-vous ?</label>
+        <input type="number" name="nb_billet" id="nb_billet"/> 
+        -->
+        </blockquote>
+    </form>
+    
+
+</body>
+</html>
